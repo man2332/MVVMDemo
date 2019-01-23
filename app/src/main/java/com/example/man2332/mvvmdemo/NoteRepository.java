@@ -97,6 +97,11 @@ public class NoteRepository {
 //      about how the operations work-the VM just calls a method(like insert)
 //      on this class, then it gets what it wants,it doesn't need to know how
 
+//-NoteRepository(Application application) CONSTRUCTOR
+//      -creates a db
+//      -creates a dao
+//      -assign allnotes(gets all notes for that field)
+
 //InsertNoteAsyncTask
 //      -if it's not static-there is possbility for memory leak
 //      -since it's static we cannot create an object from it and pass values

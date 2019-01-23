@@ -60,6 +60,8 @@ public abstract class NoteDatabase extends RoomDatabase {
 //-public abstract NoteDao noteDao(); - Room will define this method for u
 //      since we use Room.build() to create this class/object
 //      -it returns NoteDao to later used to access the db by Respository
+//NoteDatabase getInstance() METHOD
+//      -this method creates a db in sqlite and returns a reference to it
 //-synchronized means the method can only be run on one thread at a time
 //      -this ensures the ctor won't be called an extra by accident
 //-Room.databaseBuilder()- creates a Database for you
