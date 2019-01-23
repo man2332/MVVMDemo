@@ -49,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
         noteViewModel.getAllNotes().observe(this, new Observer<List<Note>>() {
             @Override
             public void onChanged(@Nullable List<Note> notes) {
-                adapter.setNotes(notes);
+                adapter.submitList(notes);
+                //call ListAdapter's method submitList() to set the note obj
             }
         });
         //SWIPE TO DELETE FEATURE
